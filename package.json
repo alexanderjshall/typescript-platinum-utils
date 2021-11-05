@@ -6,6 +6,7 @@
 	"scripts": {
 		"build": "tsc",
 		"test": "jest",
+		"test:silent": "jest --silent",
 		"prepare": "husky install"
 	},
 	"repository": {
