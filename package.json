@@ -1,44 +1,46 @@
 {
-	"name": "@alexanderjshall/platinum-utils",
-	"version": "1.0.0",
-	"description": "TS & JS Utility package for commonly used functions, methods & classes",
-	"main": "./dist/index.js",
-	"scripts": {
-		"build": "tsc",
-		"test": "jest",
-		"test:silent": "jest --silent",
-		"prepare": "husky install"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/alexanderjshall/diamond-utils.git"
-	},
-	"keywords": [
-		"utilities",
-		"utils",
-		"useful"
-	],
-	"author": "alexanderjshall",
-	"license": "MIT",
-	"bugs": {
-		"url": "https://github.com/alexanderjshall/diamond-utils/issues"
-	},
-	"homepage": "https://github.com/alexanderjshall/diamond-utils#readme",
-	"devDependencies": {
-		"@babel/core": "^7.16.0",
-		"@babel/preset-env": "^7.16.0",
-		"@babel/preset-typescript": "^7.16.0",
-		"@types/jest": "^27.0.2",
-		"@typescript-eslint/eslint-plugin": "^5.3.0",
-		"@typescript-eslint/parser": "^5.3.0",
-		"babel-jest": "^27.3.1",
-		"eslint": "^8.1.0",
-		"eslint-plugin-jest": "^25.2.2",
-		"husky": "^7.0.4",
-		"jest": "^27.3.1",
-		"prettier": "^2.4.1",
-		"ts-jest": "^27.0.7",
-		"ts-node": "^10.4.0",
-		"typescript": "^4.4.4"
-	}
+  "name": "@alexanderjshall/platinum-utils",
+  "version": "1.0.0",
+  "description": "TS & JS Utility package for commonly used functions, methods & classes",
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "test:silent": "jest --silent",
+    "clean": "prettier --write . && eslint . --fix",
+    "prepare": "husky install",
+    "publish": "npm version minor && npm publish --access public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexanderjshall/diamond-utils.git"
+  },
+  "keywords": [
+    "utilities",
+    "utils",
+    "useful"
+  ],
+  "author": "alexanderjshall",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alexanderjshall/diamond-utils/issues"
+  },
+  "homepage": "https://github.com/alexanderjshall/diamond-utils#readme",
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.0",
+    "@babel/preset-typescript": "^7.16.0",
+    "@types/jest": "^27.0.2",
+    "@typescript-eslint/eslint-plugin": "^5.3.0",
+    "@typescript-eslint/parser": "^5.3.0",
+    "babel-jest": "^27.3.1",
+    "eslint": "^8.1.0",
+    "eslint-plugin-jest": "^25.2.2",
+    "husky": "^7.0.4",
+    "jest": "^27.3.1",
+    "prettier": "^2.4.1",
+    "ts-jest": "^27.0.7",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.4.4"
+  }
 }
