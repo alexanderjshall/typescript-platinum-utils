@@ -3,14 +3,10 @@
 	"version": "1.0.0",
 	"description": "TS & JS Utility package for commonly used functions, methods & classes",
 	"main": "./dist/index.js",
-	"husky": {
-		"hooks": {
-			"pre-commit": "prettier --write . && eslint . --fix"
-		}
-	},
 	"scripts": {
 		"build": "tsc",
-		"test": "jest"
+		"test": "jest",
+		"prepare": "husky install"
 	},
 	"repository": {
 		"type": "git",
