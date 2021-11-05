@@ -8,12 +8,11 @@
     "test": "jest",
     "test:silent": "jest --silent",
     "clean": "prettier --write . && eslint . --fix",
-    "publish": "npm version minor && npm publish --access public"
+    "publish": "npm version minor && npm publish --access public",
+    "prepare": "husky install"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run clean && npm run test:silent"
-    }
+  "lint-staged": {
+    "*.ts": "prettier --write, eslint --fix"
   },
   "repository": {
     "type": "git",
@@ -43,6 +42,7 @@
     "eslint-plugin-jest": "^25.2.2",
     "husky": "^7.0.4",
     "jest": "^27.3.1",
+    "lint-staged": "^11.2.6",
     "prettier": "^2.4.1",
     "ts-jest": "^27.0.7",
     "ts-node": "^10.4.0",
