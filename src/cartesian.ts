@@ -1,9 +1,9 @@
 export class CartesianFactory {
-  public static TwoDimensionalPoint(initX = 0, initY = 0) {
+  public static CreateTwoDimensionalPoint(initX = 0, initY = 0) {
     return new TwoDimensionalPoint(initX, initY);
   }
 
-  public static ThreeDimensionalPoint(initX = 0, initY = 0, initZ = 0) {
+  public static CreateThreeDimensionalPoint(initX = 0, initY = 0, initZ = 0) {
     return new ThreeDimensionalPoint(initX, initY, initZ);
   }
 }
