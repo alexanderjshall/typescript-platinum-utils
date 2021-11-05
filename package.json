@@ -8,8 +8,12 @@
     "test": "jest",
     "test:silent": "jest --silent",
     "clean": "prettier --write . && eslint . --fix",
-    "prepare": "husky install",
     "publish": "npm version minor && npm publish --access public"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run clean && npm run test:silent"
+    }
   },
   "repository": {
     "type": "git",
@@ -34,6 +38,7 @@
     "@typescript-eslint/eslint-plugin": "^5.3.0",
     "@typescript-eslint/parser": "^5.3.0",
     "babel-jest": "^27.3.1",
+    "commitizen": "^4.2.4",
     "eslint": "^8.1.0",
     "eslint-plugin-jest": "^25.2.2",
     "husky": "^7.0.4",
