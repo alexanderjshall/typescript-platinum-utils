@@ -1,4 +1,4 @@
-export class TypeException extends Error {
+export class TypeException extends TypeError {
   constructor(message: string) {
     super(`TypeException - input failed enforced type check ${message}`);
   }
