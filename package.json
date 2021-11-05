@@ -12,7 +12,7 @@
     "prepare": "husky install"
   },
   "lint-staged": {
-    "*.ts": "prettier --write, eslint --fix"
+    "*.{ts,js}": "prettier --write, eslint --fix"
   },
   "repository": {
     "type": "git",
